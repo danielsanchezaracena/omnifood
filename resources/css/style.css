@@ -1,6 +1,4 @@
-/**************/
-/*BASIC SETUP*/
-/****************/
+/*****BASIC SETUP*****/
 :root{
     --baseOrangeColor:#e67e22;
 }
@@ -17,25 +15,78 @@ html{
     font-weight: 300;
     text-rendering: optimizeLegibility;
 } 
-/*********************/
-/*REUSABLE COMPONENTS*/
-/*********************/
+/*****REUSABLE COMPONENTS*****/
 .row{
     max-width:1140px;
     margin:0 auto;
 }
-
-h1{
-  margin:0;
-  color:#fff;
-  font-size:240%;
-  font-weight: 300;
-  text-transform:uppercase;
-  letter-spacing:1px;  
-  word-spacing: 4px;
+section{
+    padding:80px 0;
+}
+.box{
+padding:1%;
 }
 
-.btn:link,.btn:visited{
+h1,h2,h3{
+  text-transform:uppercase;
+  font-weight: 300;
+}
+
+h1{
+    word-spacing: 4px;
+    margin-top:0;
+    margin-bottom:10px;
+    color:#fff;
+    font-size:240%;
+    letter-spacing:1px;  
+}
+
+h2{
+    font-weight: 350;
+    font-size:180%;
+    text-align: center;
+    word-spacing: 2px;
+    margin-bottom:30px;
+    letter-spacing:1px;  
+}
+
+h2:after{
+    height:2px;
+    width: 150px;
+    display: block;
+    background-color: var(--baseOrangeColor);
+    content:" ";
+    margin: 0 auto;
+    margin-top:30px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom:15px;
+}
+/*****PARAGRAPHS*****/
+.long-copy{
+line-height: 130%;
+width:70%;
+margin-left:15%;
+margin-bottom: 30px;
+}
+
+.box p{
+    font-size:90%;
+    text-align:justify;
+    line-height: 130%;
+}
+/*****ICONS*****/
+.icon-big{
+font-size:400%;
+display:block;
+color:var(--baseOrangeColor);
+margin-bottom:20px;
+}
+/*****BUTTONS*****/
+.btn:link,
+.btn:visited{
     display: inline-block;
     margin-right:15px;
     font-weight: 300;
@@ -67,9 +118,7 @@ h1{
     border:1px solid #cf6d17;
     color:#fff;
 }
-/************/
-/*HEADER*/
-/************/
+/*****HEADER*****/
 header{
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0, 0, 0, 0.7)),url(img/hero.jpg) ;
     background-size: cover;
