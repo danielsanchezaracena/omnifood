@@ -15,7 +15,9 @@ html{
     font-weight: 300;
     text-rendering: optimizeLegibility;
 } 
+
 /*****REUSABLE COMPONENTS*****/
+
 .row{
     max-width:1140px;
     margin:0 auto;
@@ -64,7 +66,9 @@ h3{
     font-size: 110%;
     margin-bottom:15px;
 }
+
 /*****PARAGRAPHS*****/
+
 .long-copy{
 line-height: 130%;
 width:70%;
@@ -78,18 +82,20 @@ margin-bottom: 30px;
     line-height: 130%;
 }
 /*****ICONS*****/
+
 .icon-big{
 font-size:400%;
 display:block;
 color:var(--baseOrangeColor);
 margin-bottom:20px;
 }
+
 /*****BUTTONS*****/
+
 .btn:link,
 .btn:visited{
     display: inline-block;
     margin-right:15px;
-    font-weight: 300;
     border-radius:200px;
     text-decoration: none;
     padding:10px 30px;
@@ -118,7 +124,9 @@ margin-bottom:20px;
     border:1px solid #cf6d17;
     color:#fff;
 }
+
 /*****HEADER*****/
+
 header{
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0, 0, 0, 0.7)),url(img/hero.jpg) ;
     background-size: cover;
@@ -163,6 +171,40 @@ header{
 
 .main-nav li a:hover,
 .main-nav li a:active{
-padding-bottom:3px;    
+padding-bottom:5px;    
 border-bottom:2px solid var(--baseOrangeColor);
+}
+
+/*****MEALS*****/
+.section-meals{
+    padding:0;
+}
+.meals-showcase{
+    list-style: none;
+    width:100%;
+}
+.meals-showcase li{
+display:block;
+float: left;
+width:25%;
+}
+
+.meals-showcase li figure{
+width:100%;
+margin:0;
+overflow: hidden;
+background-color:#000;
+}
+
+.meals-showcase li figure img{
+    width:100%;
+    opacity:0.5;
+    height:auto;
+    transform:scale(1.15);
+    transition: transform 0.5s,opacity 0.5s;
+}
+
+.meals-showcase li figure img:hover{
+    transform:scale(1.03);
+    opacity:1
 }
