@@ -16,6 +16,15 @@ html{
     text-rendering: optimizeLegibility;
 } 
 
+.clearfix{zoom:1}
+.clearfix:after{
+    content:'.';
+    clear:both;
+    display:block;
+    height:0;
+    visibility: hidden;
+}
+
 /*****REUSABLE COMPONENTS*****/
 
 .row{
@@ -207,4 +216,49 @@ background-color:#000;
 .meals-showcase li figure img:hover{
     transform:scale(1.03);
     opacity:1
+}
+
+/***** HOW IT WORKS *****/
+.section-steps{
+    background-color: rgb(231, 231, 231);
+}
+.steps-box:first-child{
+    text-align: right;
+    padding-right:3%;
+    margin-top:30px;
+}
+
+.steps-box:last-child{
+    padding-left:3%;
+    margin-top:70px;
+}
+
+.iphone-app{
+    width:40%;
+}
+
+.work-step{
+margin-bottom: 40px;
+}
+
+.work-step:last-of-type{
+    margin-bottom: 80px;
+    }
+
+.work-step div{
+    float: left;
+    margin-right:25px;
+    font-size:120%;
+    text-align:center;
+    border:2px solid var(--baseOrangeColor);
+    border-radius: 50%;
+    padding:5px;
+    height:50px;
+    width:50px;
+    color:var(--baseOrangeColor);
+}
+
+.btn-app img{
+height:50px;
+width: auto;
 }
