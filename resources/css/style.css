@@ -197,6 +197,13 @@ header{
     float:left;
     margin-top: 20px;
 }
+.logo-black{
+    display: none;
+    height:50px;
+    width: auto;
+    float:left;
+    margin: 5px 0;
+}
 
 .main-nav{
     list-style: none;
@@ -211,8 +218,10 @@ header{
 
 .main-nav li a:link,
 .main-nav li a:visited{
+    padding:8px 0;
     text-decoration: none;
-    color:#e6e6e6;
+    color:#fff;
+    text-transform: uppercase;
     font-size:90%;
     border-bottom:2px solid transparent;
     transition:border-bottom 0.2s;
@@ -223,6 +232,27 @@ header{
 padding-bottom:5px;    
 border-bottom:2px solid var(--baseOrangeColor);
 }
+
+.sticky{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: rgb(255, 255, 255,0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index:9999;
+}
+.sticky .main-nav{
+    margin-top:18px;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding:16px 0;
+    color:#555;
+}
+
+.sticky .logo{display: none;}
+.sticky .logo-black{display: block;}
 
 /***** MEALS *****/
 
@@ -508,7 +538,21 @@ ion-icon[name="logo-google"]:hover{
 
 footer p{
     color:#888;
-    text-align: center;
+    text-align: center; 
     font-size: 90%;
     margin-top: 20px;
+}
+
+/*Animations*/
+
+.js-wp-1,
+.js-wp-2,
+.js-wp-3{
+    opacity: 0;
+}
+
+.js-wp-1.animate__animated,
+.js-wp-2.animate__animated,
+.js-wp-3.animate__animated{
+    opacity: 1;
 }
