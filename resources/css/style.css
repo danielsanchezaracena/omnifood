@@ -556,3 +556,19 @@ footer p{
 .js-wp-3.animate__animated{
     opacity: 1;
 }
+
+/*Mobile navigation*/
+
+.mobile-nav-icon{
+    display: none;
+    margin-top: 30px;
+    cursor:pointer;
+    float: right;
+}
+.mobile-nav-icon ion-icon{
+    font-size: 250%;
+    color:#fff;
+}
+.mobile-nav-icon:hover{
+    color:#fff;
+}

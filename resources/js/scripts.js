@@ -3,13 +3,26 @@ $(document).ready(function(){
     $('.js-section-features').waypoint(function(direction){
       console.log(direction); 
       if(direction=='down'){
-         
        $('nav').addClass('sticky');
+       $('.mobile-nav-icon ion-icon').css('color','#555');
        }else{
         $('nav').removeClass('sticky');
+        $('.mobile-nav-icon ion-icon').css('color','#fff');
        }
     }, {
       offset: '60px'
+    })
+
+    $('.mobile-nav-icon').click(()=>{
+     var $element= $('.mobile-nav-icon ion-icon');
+     var name =$element.attr("name");  
+     if(name=='reorder-three-outline'){
+      $element.attr("name","close-outline");
+      $('.main-nav').css('display','block');
+     }else{
+      $element.attr("name","reorder-three-outline");
+      $('.main-nav').css('display','none');
+     }
     })
     
     $('.js-scroll-to-plan').click(()=>{

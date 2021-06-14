@@ -61,6 +61,26 @@
         width: 40px;
     }
     .iphone-app {width: 40%;}
+    .main-nav{
+        display: none;
+        float:left;
+        margin-top:25px;
+        margin-left: 25px;
+    }
+    .main-nav li{
+        display: block;
+        margin-left:0;
+        margin-top:5px;
+    }
+.main-nav li a:link,
+.main-nav li a:visited,
+.main-nav li a:hover{
+    border-bottom:0;
+    padding:0;
+}
+    .mobile-nav-icon{
+        display: block;
+    }
 }
  
 /*Small phones: from 0 to 480px*/
